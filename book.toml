@@ -1,0 +1,9 @@
+[book]
+authors = ["Nick Danis"]
+language = "en"
+multilingual = false
+src = "src"
+title = "OTpedia"
+
+[build]
+build-dir = "docs"
