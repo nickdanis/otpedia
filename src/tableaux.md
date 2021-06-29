@@ -5,6 +5,8 @@ Much of the claims and argumentation for OT are demonstrated using tableaux (sg.
 
 ## Violation Tableaux
 
+### Test
+
 A violation tableau shows the [constraints](constraints.md) as column headings and one [candidate](candidates.md) per row. The violation marks incurred by each candidate are shown in the corresponding cells either as a number of asterisks (e.g. ***) or as a numberal (e.g. 3). 
 
 {:.ottab vt}

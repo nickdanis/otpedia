@@ -1,12 +1,65 @@
 /* USER */
 
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/CrimsonText-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../../fonts/CrimsonText-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    font-weight: bold;
+    font-style: italic;
+    src: url('../../fonts/CrimsonText-BoldItalic.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    font-weight: normal;
+    font-style: italic;
+    src: url('../../fonts/CrimsonText-Italic.ttf') format('truetype');
+    font-display: swap;
+}
+
+html {
+    font-family: 'Crimson Text', serif;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+.content p {
+    line-height: 1.6em;
+}
+
+.sidebar {
+    font-size: 1em;
+}
+
 h1 {
     letter-spacing: -1px;
 }
 
-h2 {
+h2, h3 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-weight: normal;
+    font-style: italic;
 }
 
 p {
