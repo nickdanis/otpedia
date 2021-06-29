@@ -7,3 +7,11 @@ title = "OTpedia"
 
 [build]
 build-dir = "docs"
+
+[output.html]
+additional-css = ["theme\\css\\user.css"]
+
+[preprocessor.graphviz]
+command = "mdbook-graphviz"
+
+[preprocessor.classy]

@@ -1,0 +1,1 @@
+# Elementary Ranking Condition (ERC)

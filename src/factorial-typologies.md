@@ -1,0 +1,1 @@
+# Factoral typologies

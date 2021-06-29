@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>OTpedia</title>
-                <meta name="robots" content="noindex" />
+        <title>Tableaux - OTpedia</title>
                 
 
         <!-- Custom HTML head -->
@@ -84,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html"><strong aria-hidden="true">3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html"><strong aria-hidden="true">4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">5.</strong> Rankings</a></li><li class="chapter-item expanded "><a href="erc.html"><strong aria-hidden="true">6.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html"><strong aria-hidden="true">7.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">8.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="stress.html"><strong aria-hidden="true">9.</strong> Stress</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html"><strong aria-hidden="true">3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html" class="active"><strong aria-hidden="true">4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">5.</strong> Rankings</a></li><li class="chapter-item expanded "><a href="erc.html"><strong aria-hidden="true">6.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html"><strong aria-hidden="true">7.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">8.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="stress.html"><strong aria-hidden="true">9.</strong> Stress</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -145,36 +144,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="overview"><a class="header" href="#overview">Overview</a></h1>
-<p>Optimality Theory is a constraint-based, parallel grammatical framework. This contrasts with the rule-based serialism of SPE and Hayes. The architecture of OT consists of three primary components: GEN, CON, and EVAL.</p>
-<p>The version of OT we define is strict-domination OT, sometimes called classical OT. </p>
-<h2 id="gen"><a class="header" href="#gen">GEN</a></h2>
-<p>GEN takes a given <a href="candidates.html#input">input</a> and <strong>generates</strong> a set of possible output forms. Each input/output pair, along with the correspondence relation between them, is a <a href="candidates.html">candidate</a>.</p>
-<p>GEN is a function and it must be defined explicitly. GEN can be thought of as applying any number of possible phonological operations to an input form: adding segments, removing segments, changing segments, and so on. </p>
-<h2 id="con"><a class="header" href="#con">CON</a></h2>
-<p>CON is the universal set of constraints. In OT, every language makes use of the the same constraint sets, but with different <a href="rankings.html">rankings</a> as the locus of linguistic variation. In terms of Universal Grammar, this means that the constraints themselves are part of UG, but the language-specific rankings are learned. </p>
-<h2 id="eval"><a class="header" href="#eval">EVAL</a></h2>
-<p>EVAL is the component that evaluates the candidates based on a specific ranking of CON. Given an ordering of constraints and a candidate set, EVAL filters the candidate set until only the candidate (or candidates) survives that is <em>most harmonic</em>, or optimal. Essentially, the candidate with the fewest violations for the given constraint ranking survives. </p>
-<h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
-<p>Before getting bogged down in definitions, lore, and metatheoretical symbology, let's see some examples. </p>
-<h2 id="references"><a class="header" href="#references">References</a></h2>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="candidates"><a class="header" href="#candidates">Candidates</a></h1>
-<h2 id="input"><a class="header" href="#input">Input</a></h2>
-<p>The input in OT consists of a sequence of segments. The segments could be feature matrices or more articulated autosegmental representations. However, the input is <em>not</em> restricted to phonemes, or the contrastive sounds of the language. In OT, <strong>there are no language-specific restrictions on the input</strong>. This principle is known as <strong>Richness of the Base</strong>. (Richness of the Base is sometimes incorrectly summarized as &quot;anything can be an input&quot;, but this is not quite right: the range of possible inputs must still be explicitly defined and restricted, yet these restrictions hold across languages.)</p>
-<p>Additionally, it us usually assumed that there is no prosodic structure in the input. This includes syllable and metrical structure. If there is lexical stress in a language, it can be treated as a feature on a specific segment, and then based on the ranking for that language, the resulting prosodic structure will match accordingly. In OT, all syllabification and stress is decided concurrently with other segmental processes. </p>
-<h2 id="output"><a class="header" href="#output">Output</a></h2>
-<p>The output candidates are a direct result of a given input and the definition of GEN. Every combination of processes allowed by GEN should be present in some output candidate, for the most part. Often, this results in an infinite output set: every possible kind of epenthesis simply creates more and more candidates. However, many of the resulting candidates will be <a href="harmonic-bounding.html">harmonically bounded</a> and do not need to be considered further. </p>
-<p>The infinite candidate set is often misconstrued by saying &quot;anything can be a candidate&quot; in OT; this is also incorrect. The set may be infinite, but that doesn't mean every possible phonological form (or anything non-phonological) is a candidate (my cat is not a candidate); only those forms as allowed by GEN. </p>
-<h2 id="correspondence"><a class="header" href="#correspondence">Correspondence</a></h2>
-<p>Correspondence is an explicitly-defined relation between the input and output. Each segment in the input is potentially in correspondence with a segment from the output. This relation enables constraints to track the differences between input and output forms. The figure below shows a number of possible correspondence situations.</p>
-<div class="fig">
-</div>
-<p><img src="candidates_io_corr_example_0.generated.svg" alt="" title="io-corr example" /></p>
-<p>Here, the initial [t] in the output has no correspondent in the input, and the segment /k/ in the input has no correspondent in the output. Additionally, while /m/ is in correspondence with [n], these two segments are not identical. This results in a variety of <strong>faithfulness</strong> violations.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="constraints"><a class="header" href="#constraints">Constraints</a></h1>
-<p>In strict-domination OT, constraints are functions from candidates to non-negative integers. </p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="tableaux"><a class="header" href="#tableaux">Tableaux</a></h1>
+                        <h1 id="tableaux"><a class="header" href="#tableaux">Tableaux</a></h1>
 <p>Much of the claims and argumentation for OT are demonstrated using tableaux (sg. tableau). A properly formatted tableau gives information both on the candidates and constraints, as well as some language-specific ranking information. There are two general types of tableaux, each eith their own purposes: violation tableaux (VTs) and comparative tableaux (CTs). </p>
 <h2 id="violation-tableaux"><a class="header" href="#violation-tableaux">Violation Tableaux</a></h2>
 <p>A violation tableau shows the <a href="constraints.html">constraints</a> as column headings and one <a href="candidates.html">candidate</a> per row. The violation marks incurred by each candidate are shown in the corresponding cells either as a number of asterisks (e.g. ***) or as a numberal (e.g. 3). </p>
@@ -233,17 +203,18 @@
 <tr><td>pampa~panapa</td><td></td><td>W</td><td></td><td>L</td></tr>
 </tbody></table>
 </div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rankings"><a class="header" href="#rankings">Rankings</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="elementary-ranking-condition-erc"><a class="header" href="#elementary-ranking-condition-erc">Elementary Ranking Condition (ERC)</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="harmonic-bounding"><a class="header" href="#harmonic-bounding">Harmonic bounding</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="factoral-typologies"><a class="header" href="#factoral-typologies">Factoral typologies</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="stress"><a class="header" href="#stress">Stress</a></h1>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="constraints.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
                         
+                                                    <a rel="next" href="rankings.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         
                         <div style="clear: both"></div>
                     </nav>
@@ -251,7 +222,13 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="constraints.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
                 
+                                    <a rel="next" href="rankings.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                             </nav>
 
         </div>
@@ -274,11 +251,6 @@
 
         <!-- Custom JS scripts -->
         
-                        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
-                
+        
     </body>
 </html>

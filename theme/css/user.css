@@ -1,0 +1,95 @@
+/* USER */
+
+h1 {
+    letter-spacing: -1px;
+}
+
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-block-start: 0;
+}
+
+
+body {
+    counter-reset: tabl;
+}
+
+div.ottab {
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+div.ottab::before {
+    counter-increment: tabl;
+    content: "("counter(tabl)")";
+}
+
+.ottab table {
+    margin-left: 4rem;
+    width: auto;
+}
+
+.ottab table thead th {
+    font-weight: normal;
+    border-bottom-style: double;
+}
+.ottab table td, th {
+    border: 1px black solid;
+    padding: 0.5rem 1rem !important;
+    background-color: var(--bg);
+}
+.ottab table tbody {
+    counter-reset: cand;
+}
+
+.ottab table td:nth-child(n+3) {
+    text-align: center;
+}
+
+  
+
+.vt table th:nth-child(1) {
+    border-right: none !important;
+}
+.vt table th:nth-child(2) {
+    border-left: none !important;
+}
+.vt table td:nth-child(1) {
+    border-right: none !important;
+    /* font-family: 'Segoe UI Symbol';
+    font-size: 120%; */
+    padding-left: auto;
+    padding-right: 0 !important;
+}
+.vt table td:nth-child(2) {
+    border-left: none !important;
+}
+.vt table td:nth-child(1)::before {
+    counter-increment: cand;
+    content: counter(cand, lower-alpha)". ";
+}
+
+
+.ct table td:nth-child(2) {
+    text-align: center;
+}
+.ct table td:nth-child(1)::before {
+    counter-increment: cand;
+    content: counter(cand, lower-alpha)". ";
+}
+
+.hy table td:nth-child(2) {
+    text-align: center;
+}
+.hy table tr:nth-child(1) td:nth-child(1)::before {
+    content: ""
+}
+
+.hy table tr:nth-child(n+2) td:nth-child(1)::before {
+    counter-increment: cand;
+    content: "~ "counter(cand, lower-alpha)". ";
+}
