@@ -1,2 +1,4 @@
 *.generated.svg
 full-theme/
+*.bib
+notes.md

@@ -9,9 +9,27 @@ title = "OTpedia"
 build-dir = "docs"
 
 [output.html]
-additional-css = ["theme\\css\\user.css"]
+additional-css = ["user.css"]
+cname = "otpedia.nickdanis.com"
+mathjax-support = true
 
-[preprocessor.graphviz]
-command = "mdbook-graphviz"
+[output.html.print]
+enable = false
 
-[preprocessor.classy]
+# [preprocessor.mathjax]
+# renderers = ["html"]  # mathjax only makes sense with the HTML renderer
+
+# [preprocessor.classy]
+
+# [preprocessor.graphviz]
+# command = "mdbook-graphviz"
+
+[preprocessor.bib]
+bibliography = "library.bib"
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
+
+

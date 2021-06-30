@@ -1,0 +1,235 @@
+/* USER */
+
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/CrimsonText-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/CrimsonText-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    font-weight: bold;
+    font-style: italic;
+    src: url('fonts/CrimsonText-BoldItalic.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    font-weight: normal;
+    font-style: italic;
+    src: url('fonts/CrimsonText-Italic.ttf') format('truetype');
+    font-display: swap;
+}
+
+
+main {
+    counter-reset: tabl sec;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+.content {
+    font-family: 'Crimson Text', serif;
+}
+
+.content p,.content ul,.content ol {
+    font-size: 1.8rem;
+}
+
+.content td, .content th {
+    font-size: 1.8rem;
+}
+
+.MathJax_Display {
+    font-size: 150%;
+}
+
+span.MathJax {
+    font-size: 150%
+}
+
+.content p {
+    line-height: 1.6em;
+}
+
+h1, h2 {
+    letter-spacing: -1px;
+}
+
+h2 {
+    counter-reset: subsec;
+}
+
+h2::before {
+    counter-increment: sec;
+    content: counter(sec)". ";
+    margin-right: 3rem;
+}
+
+h3::before {
+    counter-increment: subsec;
+    content: counter(sec)"."counter(subsec)". ";
+    margin-right: 3rem;
+}
+
+h2, h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-weight: normal;
+    font-style: italic;
+}
+
+p {
+    margin-block-start: 0;
+}
+
+
+
+
+div.fig p {
+    margin-left: 4rem;
+}
+
+div.fig img {
+    transform: scale(.90);
+}
+
+div.fig::before {
+    counter-increment: tabl;
+    content: "("counter(tabl)")    " attr(title);
+    white-space: pre;
+    font-size: 1.8rem;
+}
+
+span.lref::after {
+    content: "("counter(tabl)")";
+}
+
+lref::before {
+    content: "("counter(tabl)")";
+}
+
+.content {
+    --bsep: 3px;
+}
+
+div.ottab {
+    margin-block-start: 1.6rem;
+    margin-block-end: 1.6rem;
+}
+
+div.ottab::before {
+    counter-increment: tabl;
+    content: "("counter(tabl)")    "attr(title);
+    font-size: 1.8rem;
+    white-space: pre;
+}
+
+.ottab table {
+    margin-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: auto;
+}
+
+.ottab table thead th {
+    font-weight: normal;
+}
+
+.ottab table thead {
+    border-bottom: var(--bsep) black double;
+}
+
+.ottab table td, .ottab table th {
+    border: 1px black solid;
+    padding: 0.5rem 1rem !important;
+    background-color: var(--bg);
+}
+.ottab table tbody {
+    counter-reset: cand;
+}
+
+.ottab table td:nth-child(n+3) {
+    text-align: center;
+}
+
+.vt table th:nth-child(1) {
+    border-right: none !important;
+}
+.vt table th:nth-child(2) {
+    border-left: none !important;
+}
+.vt table td:nth-child(1) {
+    border-right: none !important;
+    /* font-family: 'Segoe UI Symbol';
+    font-size: 120%; */
+    padding-left: auto;
+    padding-right: 0 !important;
+}
+.vt table td:nth-child(2) {
+    border-left: none !important;
+}
+
+.vt table thead th:nth-child(3) {
+    border-left: var(--bsep) black double !important;
+}
+
+.vt table tbody td:nth-child(3) {
+    border-left: var(--bsep) black double !important;
+}
+.vt table td:nth-child(1)::before {
+    counter-increment: cand;
+    content: counter(cand, lower-alpha)". ";
+}
+
+
+.ct table td:nth-child(2) {
+    text-align: center;
+}
+.ct table td:nth-child(1)::before {
+    counter-increment: cand;
+    content: counter(cand, lower-alpha)". ";
+}
+.ct table thead th:nth-child(2) {
+    border-left: var(--bsep) black double !important;
+}
+
+.ct table tbody td:nth-child(2) {
+    border-left: var(--bsep) black double !important;
+}
+
+.hy table td:nth-child(2) {
+    text-align: center;
+}
+.hy table tr:nth-child(1) td:nth-child(1)::before {
+    content: ""
+}
+
+.hy table tr:nth-child(n+2) td:nth-child(1)::before {
+    counter-increment: cand;
+    content: "~ "counter(cand, lower-alpha)". ";
+}
+
+.hy table thead th:nth-child(2) {
+    border-left: var(--bsep) black double !important;
+}
+
+.hy table tbody td:nth-child(2) {
+    border-left: var(--bsep) black double !important;
+}
