@@ -12,6 +12,7 @@ build-dir = "docs"
 additional-css = ["user.css"]
 cname = "otpedia.nickdanis.com"
 mathjax-support = true
+google-analytics = "G-N9DQ2L740T"
 
 [output.html.print]
 enable = false
@@ -21,8 +22,8 @@ enable = false
 
 # [preprocessor.classy]
 
-# [preprocessor.graphviz]
-# command = "mdbook-graphviz"
+[preprocessor.graphviz]
+command = "mdbook-graphviz"
 
 [preprocessor.bib]
 bibliography = "library.bib"

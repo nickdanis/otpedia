@@ -44,6 +44,12 @@
 			"</div>"
 		],
 		"description": "New div for tableau."
+	},
+	"Cite": {
+		"scope": "markdown",
+		"prefix": "mdcite",
+		"body": ["{{#cite $1}}$2"],
+		"description": "New mdbook-bib citation."
 	}
 
 }

@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Tableaux - OTpedia</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="favicon.svg">
+                        <link rel="shortcut icon" href="favicon.png">
+                <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+                <link rel="stylesheet" href="user.css">
+        
+                <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="front-matter.html">Front matter</a></li><li class="chapter-item expanded "><a href="basic-concepts.html"><strong aria-hidden="true">1.</strong> Basic concepts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">1.2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html"><strong aria-hidden="true">1.3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html" class="active"><strong aria-hidden="true">1.4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">1.5.</strong> Rankings</a></li></ol></li><li class="chapter-item expanded "><a href="core-theory.html"><strong aria-hidden="true">2.</strong> Core theory</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="erc.html"><strong aria-hidden="true">2.1.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html"><strong aria-hidden="true">2.2.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">2.3.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="rcd.html"><strong aria-hidden="true">2.4.</strong> Recursive Constraint Demotion</a></li></ol></li><li class="chapter-item expanded "><a href="domains.html"><strong aria-hidden="true">3.</strong> Domains</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="syllibification.html"><strong aria-hidden="true">3.1.</strong> Syllabification</a></li><li class="chapter-item expanded "><a href="segments.html"><strong aria-hidden="true">3.2.</strong> Segmental processes</a></li><li class="chapter-item expanded "><a href="stress.html"><strong aria-hidden="true">3.3.</strong> Stress</a></li></ol></li><li class="chapter-item expanded "><a href="advanced-theory.html"><strong aria-hidden="true">4.</strong> Advanced theory</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="bcd.html"><strong aria-hidden="true">4.1.</strong> Biased Constraint Demotion</a></li><li class="chapter-item expanded "><a href="ot-variants.html"><strong aria-hidden="true">4.2.</strong> Variants of OT</a></li></ol></li><li class="chapter-item expanded "><a href="appendix.html">Appendix</a></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title">OTpedia</h1>
+
+                    <div class="right-buttons">
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tableaux"><a class="header" href="#tableaux">Tableaux</a></h1>
+<p>Much of the claims and argumentation for OT are demonstrated using tableaux (sg. tableau). A properly formatted tableau gives information both on the candidates and constraints, as well as some language-specific ranking information. There are two general types of tableaux, each eith their own purposes: violation tableaux (VTs) and comparative tableaux (CTs). </p>
+<h2 id="violation-tableaux"><a class="header" href="#violation-tableaux">Violation Tableaux</a></h2>
+<p>A violation tableau shows the <a href="constraints.html">constraints</a> as column headings and one <a href="candidates.html">candidate</a> per row. The violation marks incurred by each candidate are shown in the corresponding cells either as a number of asterisks (e.g. ***) or as a numberal (e.g. 3). Thus, <strong>the following three VTs are all equivalent</strong> and differ only in their style of presentation</p>
+<div class="ottab vt" title="Example VT with finger">
+<table><thead><tr><th></th><th>/panpa/</th><th>Max</th><th>Dep</th><th>Agree</th><th>Ident</th></tr></thead><tbody>
+<tr><td></td><td>panpa</td><td></td><td></td><td>*</td><td></td></tr>
+<tr><td>☞</td><td>pampa</td><td></td><td></td><td></td><td>*</td></tr>
+<tr><td></td><td>papa</td><td>*</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>panapa</td><td></td><td>*</td><td></td><td></td></tr>
+<tr><td></td><td>panaapa</td><td></td><td>**</td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<div class="ottab vt" title="Example VT with arrow">
+<table><thead><tr><th></th><th>/panpa/</th><th>Max</th><th>Dep</th><th>Agree</th><th>Ident</th></tr></thead><tbody>
+<tr><td></td><td>panpa</td><td></td><td></td><td>*</td><td></td></tr>
+<tr><td>→</td><td>pampa</td><td></td><td></td><td></td><td>*</td></tr>
+<tr><td></td><td>papa</td><td>*</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>panapa</td><td></td><td>*</td><td></td><td></td></tr>
+<tr><td></td><td>panaapa</td><td></td><td>**</td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<div class="ottab vt" title="Example VT with arrow and integer violation marks">
+<table><thead><tr><th></th><th>/panpa/</th><th>Max</th><th>Dep</th><th>Agree</th><th>Ident</th></tr></thead><tbody>
+<tr><td></td><td>panpa</td><td></td><td></td><td>1</td><td></td></tr>
+<tr><td>→</td><td>pampa</td><td></td><td></td><td></td><td>1</td></tr>
+<tr><td></td><td>papa</td><td>1</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>panapa</td><td></td><td>1</td><td></td><td></td></tr>
+<tr><td></td><td>panaapa</td><td></td><td>2</td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<p>The arrow indicates the winning candidate. Oftentimes, the winning candidate is indicated with a pointing finger (☞) as well. This could be in any particular row. Usually, the columns are ordered left-to-right in a way that reflects their intended <a href="rankings.html">ranking</a> for that language; however, VTs are not the best vehicle for conveying ranking information. <strong>Any arguments about ranking should be made with CTs</strong>, described in the next section. </p>
+<p>That being said, there are a number of other conventions for VTs relating to ranking. If there is a solid vertical rule between two constraint columns, that is meant to indicate that those two constraints are curically ordered with respect to each other (such that the constraint on the left must dominate the constraint on the right). Likewise, if there is a dashed line separating two columns, that means those two constraints are <em>not</em> crucially ordered with respect to each other. I don't follow this convention here, as it leads to ambiguity and it's tricky to format.</p>
+<p>Additionally, an exclamation mark inside a VT indicates a <em>fatal violation</em>, or a particular violation mark that crucially separates two candidates. </p>
+<div class="ottab vt" title="VT showing fatal violations">
+<table><thead><tr><th></th><th>/ta/</th><th>*a</th></tr></thead><tbody>
+<tr><td>☞</td><td>ta</td><td>*</td></tr>
+<tr><td></td><td>taa</td><td>**!</td></tr>
+<tr><td></td><td>taaa</td><td>*<em>!</em></td></tr>
+</tbody></table>
+</div>
+<p>In dummy VT <lref>, both the [ta] candidate and the [taa] candidate incur one violation of *a, so these violation marks effectively cancel out. However, [taa] has a second violation while [ta] does not. The exclamation mark is placed right after this violation to show that it is <em>fatal</em>, or is the death knell for this candidate. It is not uncommon to also see all cells to the right of an exclamation mark shaded gray to indicate that this candidate is no longer a possible optimum. </p>
+<h2 id="comparative-tableaux"><a class="header" href="#comparative-tableaux">Comparative Tableaux</a></h2>
+<p>Comparative tableaux are a transformation from VTs into an object that conveys explicit ranking information. In a CT, each row now represents a comparison between the winning candidate (optimum) and a particular loser, or a W~L pair. (The tilde in this context indicates that two forms are being explicitly compared.)</p>
+<p>Instead of violation counts, the crucial information in a CT is now: does a particular constraint prefer the winner, or does it prefer the loser? Here, &quot;prefer&quot; refers to the number of violation marks assigned by a constraint. A constraint that assigns fewer marks to form A than to form B is said to prefer form A. </p>
+<p>Any VT with clear violation marks and intended winner can be turned into a CT in a few steps. The CT version of the VT from the previous section is shown below.</p>
+<div class="ottab ct" title="Example CT">
+<table><thead><tr><th>/panpa/</th><th>Max</th><th>Dep</th><th>Agree</th><th>Ident</th></tr></thead><tbody>
+<tr><td>pampa~panpa</td><td></td><td></td><td>W</td><td>L</td></tr>
+<tr><td>pampa~papa</td><td>W</td><td></td><td></td><td>L</td></tr>
+<tr><td>pampa~panapa</td><td></td><td>W</td><td></td><td>L</td></tr>
+<tr><td>pampa~panaapa</td><td></td><td>W</td><td></td><td>L</td></tr>
+</tbody></table>
+</div>
+<div class="ottab hy" title="Hybrid CT">
+<table><thead><tr><th>/panpa/</th><th>Max</th><th>Dep</th><th>Agree</th><th>Ident</th></tr></thead><tbody>
+<tr><td>pampa</td><td></td><td></td><td></td><td>*</td></tr>
+<tr><td>panpa</td><td></td><td></td><td>W</td><td>L</td></tr>
+<tr><td>papa</td><td>W</td><td></td><td></td><td>L</td></tr>
+<tr><td>panapa</td><td></td><td>W</td><td></td><td>L</td></tr>
+</tbody></table>
+</div>
+<p>Notice that the majority of information conveyed are just cells with either a W or an L. In the first column, the constraint Max is shown with a W in the row for [papa]. The candidate [papa] contains one instance of deletion, so when this is compared with the winner [pampa], which has 0 instances of deletion, Max prefers the winner, and thus a W is marked. No other candidates contain instances of deletion, so Max has no preference with respect to these. </p>
+<p>In the above tableau, the winner is shown on the first row, with violation marks still present. This is only for convenience and can be ommitted. A pure CT contains only Ws and Ls. However, in this representation, it might not be clear exactly <em>how</em> violations are assigned. A &quot;hybrid&quot; tableau style is popular that includes both the Ws and Ls of CTs, and the violation marks of VTs.</p>
+<div class="ottab hy" title="Hybrid CT">
+<table><thead><tr><th>/panpa/</th><th>Max</th><th>Dep</th><th>Agree</th><th>Ident</th></tr></thead><tbody>
+<tr><td>pampa</td><td></td><td></td><td></td><td>*</td></tr>
+<tr><td>panpa</td><td></td><td></td><td>W   *</td><td>L</td></tr>
+<tr><td>papa</td><td>W  *</td><td></td><td></td><td>L</td></tr>
+<tr><td>panapa</td><td></td><td>W *</td><td></td><td>L</td></tr>
+<tr><td>panaapa</td><td></td><td>W **</td><td></td><td>L</td></tr>
+</tbody></table>
+</div>
+<p>In this guide, I will show VTs using arrows and either numerals or asterists, and hybrid CTs with numerals. This closely (but not exactly) follows the conventions in [<a href="bibliography.html#McCarthy2008">McCarthy2008</a>]. </p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="constraints.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="rankings.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="constraints.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="rankings.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+        
+                <!-- Google Analytics Tag -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-N9DQ2L740T"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-N9DQ2L740T');
+            </script>
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>

@@ -1,10 +1,14 @@
 # Front matter
 
+
+
 ## Acknowledgements
 
-This book (and website) is written in [mdbook](https://rust-lang.github.io/mdBook/), making extensive use of [mdbook-graphviz](https://github.com/dylanowen/mdbook-graphviz), [mdbook-bib](https://github.com/francisco-perez-sorrosal/mdbook-bib), and [...]. 
+This book (and website) is written in [mdbook](https://rust-lang.github.io/mdBook/), making extensive use of [mdbook-graphviz](https://github.com/dylanowen/mdbook-graphviz), [mdbook-bib](https://github.com/francisco-perez-sorrosal/mdbook-bib), and others. 
 
 ## License/Copyright
+
+INCOMPLETE WORKING DRAFT!!
 
 © 2021 by Nick Danis
 

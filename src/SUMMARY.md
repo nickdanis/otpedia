@@ -1,29 +1,32 @@
 # Summary
 
 
-[Introduction](./introduction.md)
-[Front matter](./front-matter.md)
+[Introduction](introduction.md)
+[Front matter](front-matter.md)
 
-<!-- #- [Basic concepts](./basic-concepts.md) -->
-# Basic concepts
-- [Overview](./basic-concepts/overview.md)
-- [Candidates](./basic-concepts/candidates.md)
-- [Constraints](./basic-concepts/constraints.md)
-- [Tableaux](./basic-concepts/tableaux.md)
-- [Rankings](./basic-concepts/rankings.md)
+<!-- # Basic concepts -->
+- [Basic concepts](basic-concepts.md)
+  - [Overview](overview.md)
+  - [Candidates](candidates.md)
+  - [Constraints](constraints.md)
+  - [Tableaux](tableaux.md)
+  - [Rankings](rankings.md)
 
-<!-- - [Core theory](./core-theory.md) -->
-# Core theory
-- [Elementary Ranking Conditions](./core-theory/erc.md)
-- [Harmonic Bounding](./core-theory/harmonic-bounding.md)
-- [Factorial Typologies](./core-theory/factorial-typologies.md)
-- [Recursive Constraint Demotion](./core-theory/rcd.md)
+<!-- # Core theory -->
+- [Core theory](core-theory.md)
+  - [Elementary Ranking Conditions](erc.md)
+  - [Harmonic Bounding](harmonic-bounding.md)
+  - [Factorial Typologies](factorial-typologies.md)
+  - [Recursive Constraint Demotion](rcd.md)
 
-<!-- - [Domains](./domains.md) -->
-# Domains
-- [Syllabification](./domains/syllibification.md)
-- [Segmental processes](./domains/segments.md)
-- [Stress](./domains/stress.md)
+<!-- # Domains -->
+- [Domains](domains.md)
+  - [Syllabification](syllibification.md)
+  - [Segmental processes](segments.md)
+  - [Stress](stress.md)
 
-[Appendix](./appendix/appendix.md)
-[test](./test.md)
+- [Advanced theory](advanced-theory.md)
+  - [Biased Constraint Demotion](bcd.md)
+  - [Variants of OT](ot-variants.md)
+
+[Appendix](appendix.md)
