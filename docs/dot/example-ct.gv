@@ -1,0 +1,5 @@
+digraph G {
+    Agree -> Ident;
+    Max -> Ident;
+    Dep -> Ident;
+}

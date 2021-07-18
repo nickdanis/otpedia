@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="front-matter.html">Front matter</a></li><li class="chapter-item expanded "><a href="basic-concepts.html"><strong aria-hidden="true">1.</strong> Basic concepts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">1.2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html" class="active"><strong aria-hidden="true">1.3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html"><strong aria-hidden="true">1.4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">1.5.</strong> Rankings</a></li></ol></li><li class="chapter-item expanded "><a href="core-theory.html"><strong aria-hidden="true">2.</strong> Core theory</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="erc.html"><strong aria-hidden="true">2.1.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html"><strong aria-hidden="true">2.2.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">2.3.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="rcd.html"><strong aria-hidden="true">2.4.</strong> Recursive Constraint Demotion</a></li></ol></li><li class="chapter-item expanded "><a href="domains.html"><strong aria-hidden="true">3.</strong> Domains</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="syllibification.html"><strong aria-hidden="true">3.1.</strong> Syllabification</a></li><li class="chapter-item expanded "><a href="segments.html"><strong aria-hidden="true">3.2.</strong> Segmental processes</a></li><li class="chapter-item expanded "><a href="stress.html"><strong aria-hidden="true">3.3.</strong> Stress</a></li></ol></li><li class="chapter-item expanded "><a href="advanced-theory.html"><strong aria-hidden="true">4.</strong> Advanced theory</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="bcd.html"><strong aria-hidden="true">4.1.</strong> Biased Constraint Demotion</a></li><li class="chapter-item expanded "><a href="ot-variants.html"><strong aria-hidden="true">4.2.</strong> Variants of OT</a></li></ol></li><li class="chapter-item expanded "><a href="appendix.html">Appendix</a></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="front-matter.html">Front matter</a></li><li class="chapter-item expanded affix "><li class="part-title">Basic concepts</li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html" class="active"><strong aria-hidden="true">3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html"><strong aria-hidden="true">4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">5.</strong> Rankings</a></li><li class="chapter-item expanded affix "><li class="part-title">Core theory</li><li class="chapter-item expanded "><a href="erc.html"><strong aria-hidden="true">6.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html"><strong aria-hidden="true">7.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">8.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="rcd.html"><strong aria-hidden="true">9.</strong> Recursive Constraint Demotion</a></li><li class="chapter-item expanded affix "><li class="part-title">Domains</li><li class="chapter-item expanded "><a href="syllibification.html"><strong aria-hidden="true">10.</strong> Syllabification</a></li><li class="chapter-item expanded "><a href="segments.html"><strong aria-hidden="true">11.</strong> Segmental processes</a></li><li class="chapter-item expanded "><a href="stress.html"><strong aria-hidden="true">12.</strong> Stress</a></li><li class="chapter-item expanded affix "><li class="part-title">Advanced theory</li><li class="chapter-item expanded "><a href="bcd.html"><strong aria-hidden="true">13.</strong> Biased Constraint Demotion</a></li><li class="chapter-item expanded "><a href="ot-variants.html"><strong aria-hidden="true">14.</strong> Variants of OT</a></li><li class="chapter-item expanded affix "><a href="appendix.html">Appendix</a></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -148,7 +148,39 @@
 <div class="fig" title="NoCoda">
 <p>Assign a violation for every syllable node that dominates a Coda node.</p>
 </div>
-<p>Informal verions of this constraint might be phrased as <em>don't have a coda</em>, but this is ambiguous. If a candidate contains multiple codas, is it one violation total, or on per coda node? The definition in <lref> makes this clear. </p>
+<p>Informal verions of this constraint might be phrased as <em>don't have a coda</em>, but this is ambiguous. If a candidate contains multiple codas, is it one violation total, or on per coda node? The definition in <lref> makes this clear. The definition in <lref> also means that only one violation will be assigned to a syllable with <em>multiple</em> codas. This may or may not be desirable; that's up to the analysis. It is, however, completely unambiguous. </p>
+<h2 id="common-faithfulness-constraints"><a class="header" href="#common-faithfulness-constraints">Common faithfulness constraints</a></h2>
+<p>Max and Dep are two common faithfulness contraints that control deletion and insertion, respectively. They are based in <a href="candidates.html">correspondence</a> theory. Their original definitions from [<a href="bibliography.html#McCarthyPrince1995">McCarthyPrince1995</a>] are shown below. </p>
+<div class="fig" title="MaxIO">
+<p>&quot;Every segment of the input has a correspondent in the output.&quot;</p>
+</div>
+<div class="fig" title="DepIO">
+<p>&quot;Every segment of the output has a correspondent in the input.&quot;</p>
+</div>
+<div class="fig" title="IdentIO">
+<p>&quot;Output correspondences of an input [\(\alpha\)F] segment are also [\(\alpha\)F].&quot;</p>
+</div>
+<p>Because the definition crucially references both the input and output portions of the candidate (and thus the correspondence relationship between them), these are faithfulness constraints. </p>
+<blockquote>
+<p>How would you reword the above definitions to make the violation counting more explicit?</p>
+</blockquote>
+<p>In the example candidate from <a href="candidates.html">here</a>, there is exactly one Max violation and one Dep violation.</p>
+<div class="fig" title="Basic IO correspondence">
+<p><img src="dot/io-corr-example.png" alt="" /></p>
+</div>
+<p>The input segment /k/ has no correspondent in the output, and thus this candidate incurs one Max violation. Likewise, the output segment [t] has no correspondent in the input, and thus there is one Dep violation.</p>
+<p>Note that two candidates can have the same input and output strings but different correspondence relations, and this different violation profiles. Compare the previous candidate to the one below.</p>
+<div class="fig" title="Max and Dep violations">
+<p><img src="dot/io-corr-ins-del.png" alt="" /></p>
+</div>
+<p>Both show the mapping of /anpak/ → [tampa]. However, in <lref>, there is no correspondence between /n/ and [m]. This means that there are two violations each of Max and Dep: the /n/ is deleted, and the [m] is inserted. The following VT shows the differences:</p>
+<div class="ottab vt" title="Comparing correspondence">
+<table><thead><tr><th></th><th>/anpak/</th><th>Max</th><th>Dep</th><th>Ident</th></tr></thead><tbody>
+<tr><td></td><td>tampa (5)</td><td>*</td><td>*</td><td>*</td></tr>
+<tr><td></td><td>tampa (6)</td><td>**</td><td>**</td><td></td></tr>
+</tbody></table>
+</div>
+<p>The number after the output shows the diagram with the correspondence relations for that candidate. Correspondence is one type of &quot;hidden&quot; structure, and the correct correspondence structure is determined in the course of analysis rather than in phonetic transcription.</p>
 <hr />
 <div class="footnote-definition" id="1"><sup class="footnote-definition-label">1</sup>
 <p>Usually, because <em>anti-faithfulness</em> is also a thing: while faithfulness constraints penalize differences between input and output, anti-faithfulness constraints are useful when the output must differ in a particular way from the input. </p>

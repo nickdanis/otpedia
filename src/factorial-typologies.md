@@ -1,3 +1,3 @@
-# Factoral typologies
+# Factorial typologies
 
 TK

@@ -10,13 +10,15 @@ A single partial order can be visually represented with a **Hasse diagram**. In 
 
 <div class="fig" title="Example Hasse diagram">
 
-```dot process example-hasse
+<!-- ```dot process example-hasse
 digraph G {
     C1 -> C2;
     C1 -> C3;
     C2 -> C4;
 }
-```
+``` -->
+
+![example hasse diagram](dot/example-hasse.png)
 
 </div>
 
@@ -59,13 +61,15 @@ Notice we have orderings that must hold between some elements, but not all. This
 
 <div class="fig" title="Ranking for CT">
 
-```dot process example-ct
+<!-- ```dot process example-ct
 digraph G {
     Agree -> Ident;
     Max -> Ident;
     Dep -> Ident;
 }
-```
+``` -->
+
+![example hasse diagram](dot/example-ct.png)
 
 </div>
 

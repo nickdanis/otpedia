@@ -8,7 +8,7 @@ by [Nick Danis](https://nickdanis.com)
 
 This pseudo-textbook is intended as a student reference for Optimality Theory (OT) {{#cite PrinceSmolensky1993}}. The specific version of OT discussed is parallel, strict-domination OT or "classical OT", with correspondence theory. 
 
-The textbook is a work in progress and will be updated regularly. You may navigate all chapters and content using the sidebar on the left, the pageturn buttons on the left and right, or the search field above. 
+The textbook is **incomplete**, is a work in progress, and will be updated regularly. You may navigate all chapters and content using the sidebar on the left, the pageturn buttons on the left and right, or the search field above. 
 
 This is not a primary source. Do not cite it as such. References to the literature will be made where relevant. 
 

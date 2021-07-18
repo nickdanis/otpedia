@@ -22,8 +22,8 @@ enable = false
 
 # [preprocessor.classy]
 
-[preprocessor.graphviz]
-command = "mdbook-graphviz"
+# [preprocessor.graphviz]
+# command = "mdbook-graphviz"
 
 [preprocessor.bib]
 bibliography = "library.bib"

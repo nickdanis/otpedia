@@ -10,8 +10,64 @@ Assign a violation for every syllable node that dominates a Coda node.
 
 </div>
 
-Informal verions of this constraint might be phrased as *don't have a coda*, but this is ambiguous. If a candidate contains multiple codas, is it one violation total, or on per coda node? The definition in <lref> makes this clear. 
+Informal verions of this constraint might be phrased as *don't have a coda*, but this is ambiguous. If a candidate contains multiple codas, is it one violation total, or on per coda node? The definition in <lref> makes this clear. The definition in <lref> also means that only one violation will be assigned to a syllable with *multiple* codas. This may or may not be desirable; that's up to the analysis. It is, however, completely unambiguous. 
 
+## Common faithfulness constraints
+
+Max and Dep are two common faithfulness contraints that control deletion and insertion, respectively. They are based in [correspondence](candidates.md) theory. Their original definitions from {{#cite McCarthyPrince1995}} are shown below. 
+
+<div class="fig" title="MaxIO">
+
+"Every segment of the input has a correspondent in the output."
+
+</div>
+
+<div class="fig" title="DepIO">
+
+"Every segment of the output has a correspondent in the input."
+
+</div>
+
+<div class="fig" title="IdentIO">
+
+"Output correspondences of an input [\\(\alpha\\)F] segment are also [\\(\alpha\\)F]."
+
+</div>
+
+Because the definition crucially references both the input and output portions of the candidate (and thus the correspondence relationship between them), these are faithfulness constraints. 
+
+> How would you reword the above definitions to make the violation counting more explicit?
+
+In the example candidate from [here](candidates.md), there is exactly one Max violation and one Dep violation.
+
+<div class="fig" title="Basic IO correspondence">
+
+![](dot/io-corr-example.png)
+
+</div>
+
+The input segment /k/ has no correspondent in the output, and thus this candidate incurs one Max violation. Likewise, the output segment [t] has no correspondent in the input, and thus there is one Dep violation.
+
+Note that two candidates can have the same input and output strings but different correspondence relations, and this different violation profiles. Compare the previous candidate to the one below.
+
+<div class="fig" title="Max and Dep violations">
+
+![](dot/io-corr-ins-del.png)
+
+</div>
+
+Both show the mapping of /anpak/ → [tampa]. However, in <lref>, there is no correspondence between /n/ and [m]. This means that there are two violations each of Max and Dep: the /n/ is deleted, and the [m] is inserted. The following VT shows the differences:
+
+<div class="ottab vt" title="Comparing correspondence">
+
+|     | /anpak/   | Max | Dep | Ident |
+| --- | --------- | --- | --- | ----- |
+|     | tampa (5) | *   | *   | *     |
+|     | tampa (6) | **  | **  |       |
+
+</div>
+
+The number after the output shows the diagram with the correspondence relations for that candidate. Correspondence is one type of "hidden" structure, and the correct correspondence structure is determined in the course of analysis rather than in phonetic transcription.
 
 ---
 

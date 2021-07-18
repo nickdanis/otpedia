@@ -125,7 +125,7 @@ div.fig p {
 }
 
 div.fig img {
-    transform: scale(.90);
+    transform: scale(1);
 }
 
 div.fig::before {
