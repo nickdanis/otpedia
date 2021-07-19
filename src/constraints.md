@@ -2,19 +2,48 @@
 
 In strict-domination OT, constraints are functions from candidates to non-negative integers. Because a [candidate](candidates.md) is a triplet consisting of (input, output, correspondence), the constraint has access to this structure. Constraints that only consider the output structre are called **markedness** constraints, and constraints that refer to both the input and output structure (and the relation between them) are (usually) **faithfulness** constraints.[^1]
 
-Constraints are said to be negative, meaning they assign violations based on the presence of structure. Intuitively, this  is like thinking "don't have this", rather than "do have that". Because constraints can assign multiple violations per candidate, their definitions should be given in a way that makes this counting clear. A good informal model for a constraint definition is *Assign a violation for every x such that...*. For example:
+## Constraint definitions
+
+Constraints are said to be negative, meaning they assign violations based on the presence of structure. Intuitively, this  is like thinking "don't have this", rather than "do have that". Because constraints can assign multiple violations per candidate, their definitions should be given in a way that makes this counting clear. Consider the following constraint:
 
 <div class="fig" title="NoCoda">
+
+Don't have codas.
+
+</div>
+
+How would this assign violations to a form like [tak]? What about [task], or [taktak]? Do you need to make additional assumptions? The definition in <lref> is ambiguous. Here are some explicit alternatives:
+
+<div class="fig" title="NoCoda v2">
 
 Assign a violation for every syllable node that dominates a Coda node.
 
 </div>
 
-Informal verions of this constraint might be phrased as *don't have a coda*, but this is ambiguous. If a candidate contains multiple codas, is it one violation total, or on per coda node? The definition in <lref> makes this clear. The definition in <lref> also means that only one violation will be assigned to a syllable with *multiple* codas. This may or may not be desirable; that's up to the analysis. It is, however, completely unambiguous. 
+<div class="fig" title="NoCoda v3">
+
+Assign a violation for every segment that is dominated by a Coda node. 
+
+</div>
+
+A good informal model for constraint definitions in general is *Assign a violation for every x such that...*. The following VT shows how violations can now be clearly defined (and how these v2 and v3 crucially differ):
+
+<div class="ottab vt" title="NoCoda comparison">
+
+|     |        | NoCoda | NoCoda v2 | NoCoda v3 |
+| --- | ------ | ------ | --------- | --------- |
+|     | ta     | 0      | 0         | 0         |
+|     | tak    | 1      | 1         | 1         |
+|     | task   | ?      | 1         | 2         |
+|     | taktak | ?      | 2         | 2         |
+
+</div>
+
+It will be up to the analyst to determine whether the definition in v2 is deirable, or that in v3, or some alternative. What is crucial, however, is that the chosen definition is clear and explicit. 
 
 ## Common faithfulness constraints
 
-Max and Dep are two common faithfulness contraints that control deletion and insertion, respectively. They are based in [correspondence](candidates.md) theory. Their original definitions from {{#cite McCarthyPrince1995}} are shown below. 
+Max, Dep, and Ident are three common faithfulness constraint types that control deletion, insertion and featural changes, respectively. They are based in [correspondence](candidates.md) theory. Their original definitions (for input-output correspondence) from {{#cite McCarthyPrince1995}} are shown below. 
 
 <div class="fig" title="MaxIO">
 
@@ -38,21 +67,23 @@ Because the definition crucially references both the input and output portions o
 
 > How would you reword the above definitions to make the violation counting more explicit?
 
-In the example candidate from [here](candidates.md), there is exactly one Max violation and one Dep violation.
+In the example candidate from [here](candidates.md), there is exactly one violation for each of the above three constraints. 
 
-<div class="fig" title="Basic IO correspondence">
+<div class="fig" title="Max, Dep, and Ident disparities">
 
-![](dot/io-corr-example.png)
+![](dot/io-corr-example.svg)
 
 </div>
 
-The input segment /k/ has no correspondent in the output, and thus this candidate incurs one Max violation. Likewise, the output segment [t] has no correspondent in the input, and thus there is one Dep violation.
+The input segment /k/ has no correspondent in the output, and thus this candidate incurs one Max violation. Likewise, the output segment [t] has no correspondent in the input, and thus there is one Dep violation. Likewise, /n/ is in correspondence with [m] (indicated by the connecting line), yet these two segments differ in their place features, so there is a violation of Ident.
+
+> IdentIO is usually defined on a per-feature basis (e.g. IdentIO-voice), yet there are multiple place features that are different between /n/ and [m]. How would different, explicit definitions of the relevant IdentIO constraints count violations?
 
 Note that two candidates can have the same input and output strings but different correspondence relations, and this different violation profiles. Compare the previous candidate to the one below.
 
-<div class="fig" title="Max and Dep violations">
+<div class="fig" title="Max and Dep disparities only">
 
-![](dot/io-corr-ins-del.png)
+![](dot/io-corr-ins-del.svg)
 
 </div>
 

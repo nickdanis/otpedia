@@ -4,7 +4,7 @@ Much of the claims and argumentation for OT are demonstrated using tableaux (sg.
 
 ## Violation Tableaux
 
-A violation tableau shows the [constraints](constraints.md) as column headings and one [candidate](candidates.md) per row. The violation marks incurred by each candidate are shown in the corresponding cells either as a number of asterisks (e.g. ***) or as a numberal (e.g. 3). Thus, **the following three VTs are all equivalent** and differ only in their style of presentation
+A violation tableau shows the [constraints](constraints.md) as column headings and one [candidate](candidates.md) per row. The violation marks incurred by each candidate are shown in the corresponding cells either as a number of asterisks (e.g. \*\*\*).
 
 <div class="ottab vt" title="Example VT with finger">
 
@@ -17,6 +17,8 @@ A violation tableau shows the [constraints](constraints.md) as column headings a
 |         | panaapa |     | **  |       |       |
 
 </div>
+
+The style in <lref> is extremely common, especially in work throughout the 1990s and early 2000s. It is also common to use an arrow instead of the finger icon to indicate the winner, and to use integers instead of asterisks to show violation counts. Thus, the following two tableaux are equivalent in information to <lref>, and differ only in their style of presentation.  
 
 <div class="ottab vt" title="Example VT with arrow">
 
@@ -42,33 +44,37 @@ A violation tableau shows the [constraints](constraints.md) as column headings a
 
 </div>
 
-The arrow indicates the winning candidate. Oftentimes, the winning candidate is indicated with a pointing finger (&#9758;) as well. This could be in any particular row. Usually, the columns are ordered left-to-right in a way that reflects their intended [ranking](rankings.md) for that language; however, VTs are not the best vehicle for conveying ranking information. **Any arguments about ranking should be made with CTs**, described in the next section. 
+Usually, the columns are ordered left-to-right in a way that reflects their intended [ranking](rankings.md) for that language; however, VTs are **not** the best vehicle for conveying ranking information. **Any arguments about ranking should be made with CTs**, described in the next section. 
 
-That being said, there are a number of other conventions for VTs relating to ranking. If there is a solid vertical rule between two constraint columns, that is meant to indicate that those two constraints are curically ordered with respect to each other (such that the constraint on the left must dominate the constraint on the right). Likewise, if there is a dashed line separating two columns, that means those two constraints are *not* crucially ordered with respect to each other. I don't follow this convention here, as it leads to ambiguity and it's tricky to format.
+That being said, there are a number of other conventions for VTs relating to ranking. If there is a solid vertical rule between two constraint columns, that is (usually) meant to indicate that those two constraints are curically ordered with respect to each other (such that the constraint on the left must dominate the constraint on the right). Likewise, if there is a dashed line separating two columns, that means those two constraints are *not* crucially ordered with respect to each other. I don't follow this convention here, as it leads to ambiguity and it's tricky to format.
+
+In any of the VTs above, for instance, if it is assumed that the intended ranking is the order of constraints as listed left-to-right, the optimal candidate can be found as follows: For the first constraint, which candidate (or set of candidates) receives the fewest violations? Then, for the next column, of these remaining candidates, which of *these* receives the fewest violations of this next constraint? THis filtration continues until there is a non-empty set that cannot be further differentiated. This set (usually a singleton set, but not necessarily) is the optimum. 
 
 Additionally, an exclamation mark inside a VT indicates a *fatal violation*, or a particular violation mark that crucially separates two candidates. 
 
 <div class="ottab vt" title="VT showing fatal violations">
 
-|         | /ta/ | *a          |
-| ------- | ---- | ----------- |
-| &#9758; | ta   | \*          |
-|         | taa  | \*\*!       |
-|         | taaa | \*\*!&#x2a; |
+|         | /ta/ | *a      |
+| ------- | ---- | ------- |
+| &#9758; | ta   | \*      |
+|         | taa  | \*\*!   |
+|         | taaa | \*\*!\* |
 
 </div>
 
-In dummy VT <lref>, both the [ta] candidate and the [taa] candidate incur one violation of \*a, so these violation marks effectively cancel out. However, [taa] has a second violation while [ta] does not. The exclamation mark is placed right after this violation to show that it is *fatal*, or is the death knell for this candidate. It is not uncommon to also see all cells to the right of an exclamation mark shaded gray to indicate that this candidate is no longer a possible optimum. 
+In dummy VT <lref>, all three candidates, [ta], [taa], and [taaa], incur one violation of \*a, so these violation marks effectively cancel out. However, [taa] has a second violation while [ta] does not (and likewise for [taaa]). The exclamation mark is placed right after this violation to show that it is *fatal*, or is the death knell for this candidate. It is not uncommon to also see all cells to the right of an exclamation mark shaded gray to indicate that this candidate is no longer a possible optimum. 
+
+> Do not confuse a tableau with the analysis itself. Showing a tableau is helpful if done appropriately, but an analysis consists of clear definitions of GEN and CON, with arguments that all relevant candidates have been considered and all informative ranking conditions given. A tableau can help with these arguments, but it is not a substitution for these arguments. 
 
 ## Comparative Tableaux
 
-Comparative tableaux are a transformation from VTs into an object that conveys explicit ranking information. In a CT, each row now represents a comparison between the winning candidate (optimum) and a particular loser, or a W~L pair. (The tilde in this context indicates that two forms are being explicitly compared.)
+Comparative tableaux are a transformation from VTs into an object that conveys explicit ranking information. In a CT, each row now represents a comparison between the winning candidate (optimum) and a particular loser, or a W~L pair. (The tilde in this context indicates that two forms are being explicitly compared.) Each row in a CT is an [elementary ranking condition](erc.md).
 
 Instead of violation counts, the crucial information in a CT is now: does a particular constraint prefer the winner, or does it prefer the loser? Here, "prefer" refers to the number of violation marks assigned by a constraint. A constraint that assigns fewer marks to form A than to form B is said to prefer form A. 
 
 Any VT with clear violation marks and intended winner can be turned into a CT in a few steps. The CT version of the VT from the previous section is shown below.
 
-<div class="ottab ct" title="Example CT">
+<div class="ottab ct" title="'Pure' CT">
 
 | /panpa/       | Max | Dep | Agree | Ident |
 | ------------- | --- | --- | ----- | ----- |
@@ -76,17 +82,6 @@ Any VT with clear violation marks and intended winner can be turned into a CT in
 | pampa~papa    | W   |     |       | L     |
 | pampa~panapa  |     | W   |       | L     |
 | pampa~panaapa |     | W   |       | L     |
-
-</div>
-
-<div class="ottab hy" title="Hybrid CT">
-
-| /panpa/ | Max | Dep | Agree | Ident |
-| ------- | --- | --- | ----- | ----- |
-| pampa   |     |     |       | *     |
-| panpa   |     |     | W     | L     |
-| papa    | W   |     |       | L     |
-| panapa  |     | W   |       | L     |
 
 </div>
 
@@ -105,6 +100,8 @@ In the above tableau, the winner is shown on the first row, with violation marks
 | panaapa |       | W \*\* |        | L     |
 
 </div>
+
+In <lref>, the violation marks are shown explicitly as in a plain VT. The winner, or optimum, is now in the first row. Each subsequent row (labeled by lowercase letters) is a comparison between that losing candidate and the winning candidate in the first row. A hybrid CT thus shows explicit violation marks *and* clear ranking information, making it a very informative way to present the analysis. 
 
 In this guide, I will show VTs using arrows and either numerals or asterists, and hybrid CTs with numerals. This closely (but not exactly) follows the conventions in {{#cite McCarthy2008}}. 
 

@@ -16,12 +16,12 @@ The infinite candidate set is often misconstrued by saying "anything can be a ca
 
 ## Correspondence
 
-Correspondence is an explicitly-defined relation between the input and output. Each segment in the input is potentially in correspondence with a segment from the output. This relation enables constraints to track the differences between input and output forms. The figure below shows a number of possible correspondence situations.
+[Correspondence](correspondence.md) is an explicitly-defined relation between the input and output. Each segment in the input is potentially in correspondence with a segment from the output. This relation enables constraints to track the differences between input and output forms. The figure below shows a number of possible correspondence situations.
 
 <div class="fig" title="Basic IO correspondence">
 
-![](dot/io-corr-example.png)
+![](dot/io-corr-example.svg)
 
 </div>
 
-In example <span class="lref"></span>, the initial [t] in the output has no correspondent in the input, and the segment /k/ in the input has no correspondent in the output. Additionally, while /m/ is in correspondence with [n], these two segments are not identical. This results in a variety of **faithfulness** violations.
+In example <span class="lref"></span>, the initial [t] in the output has no correspondent in the input, and the segment /k/ in the input has no correspondent in the output. Additionally, while /m/ is in correspondence with [n], these two segments are not identical. This results in a variety of [**faithfulness**](constraints.md#common-faithfulness-constraints) violations.

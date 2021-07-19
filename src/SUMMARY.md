@@ -13,6 +13,7 @@
 
 # Core theory
 
+- [Correspondence](correspondence.md)
 - [Elementary Ranking Conditions](erc.md)
 - [Harmonic Bounding](harmonic-bounding.md)
 - [Factorial Typologies](factorial-typologies.md)

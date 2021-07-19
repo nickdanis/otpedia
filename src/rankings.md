@@ -18,7 +18,7 @@ digraph G {
 }
 ``` -->
 
-![example hasse diagram](dot/example-hasse.png)
+![example hasse diagram](dot/example-hasse.svg)
 
 </div>
 
@@ -69,7 +69,7 @@ digraph G {
 }
 ``` -->
 
-![example hasse diagram](dot/example-ct.png)
+![example hasse diagram](dot/example-ct.svg)
 
 </div>
 

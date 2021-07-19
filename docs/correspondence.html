@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Syllabification - OTpedia</title>
+        <title>Correspondence - OTpedia</title>
                 
 
         <!-- Custom HTML head -->
@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="front-matter.html">Front matter</a></li><li class="chapter-item expanded affix "><li class="part-title">Basic concepts</li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html"><strong aria-hidden="true">3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html"><strong aria-hidden="true">4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">5.</strong> Rankings</a></li><li class="chapter-item expanded affix "><li class="part-title">Core theory</li><li class="chapter-item expanded "><a href="correspondence.html"><strong aria-hidden="true">6.</strong> Correspondence</a></li><li class="chapter-item expanded "><a href="erc.html"><strong aria-hidden="true">7.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html"><strong aria-hidden="true">8.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">9.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="rcd.html"><strong aria-hidden="true">10.</strong> Recursive Constraint Demotion</a></li><li class="chapter-item expanded affix "><li class="part-title">Domains</li><li class="chapter-item expanded "><a href="syllibification.html" class="active"><strong aria-hidden="true">11.</strong> Syllabification</a></li><li class="chapter-item expanded "><a href="segments.html"><strong aria-hidden="true">12.</strong> Segmental processes</a></li><li class="chapter-item expanded "><a href="stress.html"><strong aria-hidden="true">13.</strong> Stress</a></li><li class="chapter-item expanded affix "><li class="part-title">Advanced theory</li><li class="chapter-item expanded "><a href="bcd.html"><strong aria-hidden="true">14.</strong> Biased Constraint Demotion</a></li><li class="chapter-item expanded "><a href="ot-variants.html"><strong aria-hidden="true">15.</strong> Variants of OT</a></li><li class="chapter-item expanded affix "><a href="appendix.html">Appendix</a></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="front-matter.html">Front matter</a></li><li class="chapter-item expanded affix "><li class="part-title">Basic concepts</li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html"><strong aria-hidden="true">3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html"><strong aria-hidden="true">4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">5.</strong> Rankings</a></li><li class="chapter-item expanded affix "><li class="part-title">Core theory</li><li class="chapter-item expanded "><a href="correspondence.html" class="active"><strong aria-hidden="true">6.</strong> Correspondence</a></li><li class="chapter-item expanded "><a href="erc.html"><strong aria-hidden="true">7.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html"><strong aria-hidden="true">8.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">9.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="rcd.html"><strong aria-hidden="true">10.</strong> Recursive Constraint Demotion</a></li><li class="chapter-item expanded affix "><li class="part-title">Domains</li><li class="chapter-item expanded "><a href="syllibification.html"><strong aria-hidden="true">11.</strong> Syllabification</a></li><li class="chapter-item expanded "><a href="segments.html"><strong aria-hidden="true">12.</strong> Segmental processes</a></li><li class="chapter-item expanded "><a href="stress.html"><strong aria-hidden="true">13.</strong> Stress</a></li><li class="chapter-item expanded affix "><li class="part-title">Advanced theory</li><li class="chapter-item expanded "><a href="bcd.html"><strong aria-hidden="true">14.</strong> Biased Constraint Demotion</a></li><li class="chapter-item expanded "><a href="ot-variants.html"><strong aria-hidden="true">15.</strong> Variants of OT</a></li><li class="chapter-item expanded affix "><a href="appendix.html">Appendix</a></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -142,18 +142,52 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="syllabification"><a class="header" href="#syllabification">Syllabification</a></h1>
-<p>TK</p>
+                        <h1 id="correspondence"><a class="header" href="#correspondence">Correspondence</a></h1>
+<p>Correspondence is a relation \(\mathcal{R}\) between segments. Here and in [<a href="bibliography.html#McCarthyPrince1995">McCarthyPrince1995</a>], the input and outputs consist of strings of segments, with each segment having an number of featural definitions. In input-output (IO) correspondence, the relation \(\mathcal{R}\) is defined over \(S_i \times S_o\), which is the set of input segments and the set of output segments, respectively. 
+Correspondence itself is a kind of hidden structure and has no phonetic realization beyond what effects correspondence-referring constraints have on the segments themselves in the various mappings. </p>
+<p>The example below shows the input string /anpak/, the output string [tampa], and the various correspondence relations between segments.</p>
+<div class="fig" title="Basic IO correspondence">
+<p><img src="dot/io-corr-example.svg" alt="" /></p>
+</div>
+<p>The above diagram is equivalent to saying explicitly:</p>
+<p>\[ \mathcal{R} = \{(\text{a}^1_i,\text{a}^1_o), (\text{n}_i,\text{m}_o), (\text{p}_i, \text{p}_o), (\text{a}^2_i,\text{a}^2_o)\} \]</p>
+<p>(The superscripts serve to differentiate the two unique segments [a]). It is also common to see correspondence relations indicated as subscripted numeras on each segment, so the above again could be shown as the following:</p>
+<p>\[ /\text{a}_1\text{n}_2\text{p}_3\text{a}_4\text{k}/ \rightarrow [\text{t}\text{a}_1\text{m}_2\text{p}_3\text{a}_4] \]</p>
+<p>Segments with shared numerical indices are in correspondence with each other. Segments with no index, or with an index that has no matching value, are <em>not</em> in correspondence with each other. This style of presentation is useful for showing correspondence relations in tableaux, though heavily-index candidates can be hard to parse by the reader. </p>
+<h2 id="other-io-correspondence-configurations"><a class="header" href="#other-io-correspondence-configurations">Other IO correspondence configurations</a></h2>
+<p>The examples thus far have shown a one-to-one correspondence relation, which the relative order of segments in correspondence preserved. Depending on the analysis/definition of GEN, further configurations are possible. </p>
+<h3 id="splitting"><a class="header" href="#splitting">Splitting</a></h3>
+<p>Splitting is when a single input segment has two correspondents in the output.</p>
+<div class="fig" title="Splitting">
+<p><img src="dot/splitting.svg" alt="" /></p>
+</div>
+<h3 id="coalescence"><a class="header" href="#coalescence">Coalescence</a></h3>
+<p>Coalescence, also called fusion, is when two input segments have a single output correspondent.</p>
+<div class="fig" title="Coalescence">
+<p><img src="dot/coalescence.svg" alt="" /></p>
+</div>
+<h3 id="metathesis"><a class="header" href="#metathesis">Metathesis</a></h3>
+<p>Metathesis is a process where only the order of segments has changed. Thus it can still be modeled by a one-to-one relation, but with input correspondents having a different linear order than their output correspondents. </p>
+<div class="fig" title="Metathesis">
+<p><img src="dot/metathesis.svg" alt="" /></p>
+</div>
+<blockquote>
+<p>How do Max, Dep, and Ident assign violations to the above configurations? What other types of constraints might be necessary, and how would these be defined?</p>
+</blockquote>
+<h2 id="correspondence-beyond-inputs-and-outputs"><a class="header" href="#correspondence-beyond-inputs-and-outputs">Correspondence beyond inputs and outputs</a></h2>
+<p>[<a href="bibliography.html#McCarthyPrince1995">McCarthyPrince1995</a>] apply correspondence for inputs and outputs as is done here, and also between a <strong>base</strong> and <strong>reduplicant</strong>, to model processes of reduplication. Both the base and reduplicant are in the same output string, but parallel verions of Max, Dep, and Ident (or whatever other constraints) operate over this relation.</p>
+<p>[<a href="bibliography.html#Benua1997">Benua1997</a>] uses <strong>output-output correspondence</strong> to explain similarities among words in the same paradigm. For instance, segments in the output of <em>military</em> might be in correspondence with segments in the output of <em>militaristic</em>. Not that OO correspondence does <strong>not</strong> mean correspondence between two segments in the <em>same</em> output string.</p>
+<p>Long-distance processes are modeled with <strong>surface correspondence</strong> in [<a href="bibliography.html#RoseWalker2004">RoseWalker2004</a>], [<a href="bibliography.html#Hansson2010">Hansson2010</a>], [<a href="bibliography.html#Bennett2013">Bennett2013</a>], among others. Here, two segments in the same output (or surface) form can potentially be in correspondence with each other, and there is again a parallel family of Ident and related constraints to control this relation. It is also sometimes abbreviated CC correspondence (usually in reference to two consonants in correspondence).</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="rcd.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="rankings.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
-                                                    <a rel="next" href="segments.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="erc.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -163,11 +197,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="rcd.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="rankings.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
-                                    <a rel="next" href="segments.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="erc.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                             </nav>

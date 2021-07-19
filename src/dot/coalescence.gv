@@ -1,0 +1,20 @@
+graph G {
+  node [shape=record,height=.25];
+  edge [style=dashed];
+  subgraph cluster_in {
+    label = "input";
+    color=white;
+    input [label="<e>e|<n>n|<k>k|<a>a"];
+  }
+  subgraph cluster_out {
+    label = "output";
+    labelloc=b;
+    color=white;
+    output [label="<e>e|<N>ŋ|<a>a"];
+  }
+  
+  input:e -- output:e;
+  input:n -- output:N;
+  input:k -- output:N;
+  input:a -- output:a;
+}

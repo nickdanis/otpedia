@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="front-matter.html">Front matter</a></li><li class="chapter-item expanded affix "><li class="part-title">Basic concepts</li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html"><strong aria-hidden="true">3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html"><strong aria-hidden="true">4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">5.</strong> Rankings</a></li><li class="chapter-item expanded affix "><li class="part-title">Core theory</li><li class="chapter-item expanded "><a href="erc.html" class="active"><strong aria-hidden="true">6.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html"><strong aria-hidden="true">7.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">8.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="rcd.html"><strong aria-hidden="true">9.</strong> Recursive Constraint Demotion</a></li><li class="chapter-item expanded affix "><li class="part-title">Domains</li><li class="chapter-item expanded "><a href="syllibification.html"><strong aria-hidden="true">10.</strong> Syllabification</a></li><li class="chapter-item expanded "><a href="segments.html"><strong aria-hidden="true">11.</strong> Segmental processes</a></li><li class="chapter-item expanded "><a href="stress.html"><strong aria-hidden="true">12.</strong> Stress</a></li><li class="chapter-item expanded affix "><li class="part-title">Advanced theory</li><li class="chapter-item expanded "><a href="bcd.html"><strong aria-hidden="true">13.</strong> Biased Constraint Demotion</a></li><li class="chapter-item expanded "><a href="ot-variants.html"><strong aria-hidden="true">14.</strong> Variants of OT</a></li><li class="chapter-item expanded affix "><a href="appendix.html">Appendix</a></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="front-matter.html">Front matter</a></li><li class="chapter-item expanded affix "><li class="part-title">Basic concepts</li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html"><strong aria-hidden="true">3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html"><strong aria-hidden="true">4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">5.</strong> Rankings</a></li><li class="chapter-item expanded affix "><li class="part-title">Core theory</li><li class="chapter-item expanded "><a href="correspondence.html"><strong aria-hidden="true">6.</strong> Correspondence</a></li><li class="chapter-item expanded "><a href="erc.html" class="active"><strong aria-hidden="true">7.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html"><strong aria-hidden="true">8.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">9.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="rcd.html"><strong aria-hidden="true">10.</strong> Recursive Constraint Demotion</a></li><li class="chapter-item expanded affix "><li class="part-title">Domains</li><li class="chapter-item expanded "><a href="syllibification.html"><strong aria-hidden="true">11.</strong> Syllabification</a></li><li class="chapter-item expanded "><a href="segments.html"><strong aria-hidden="true">12.</strong> Segmental processes</a></li><li class="chapter-item expanded "><a href="stress.html"><strong aria-hidden="true">13.</strong> Stress</a></li><li class="chapter-item expanded affix "><li class="part-title">Advanced theory</li><li class="chapter-item expanded "><a href="bcd.html"><strong aria-hidden="true">14.</strong> Biased Constraint Demotion</a></li><li class="chapter-item expanded "><a href="ot-variants.html"><strong aria-hidden="true">15.</strong> Variants of OT</a></li><li class="chapter-item expanded affix "><a href="appendix.html">Appendix</a></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -143,13 +143,32 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="elementary-ranking-condition-erc"><a class="header" href="#elementary-ranking-condition-erc">Elementary Ranking Condition (ERC)</a></h1>
-<p>TK</p>
+<p>Once data is represented in a <a href="tableaux.html">comparative tableau</a>, ranking information is readily accessible as a set of <strong>elementary ranking conditions</strong>, or ERCs. The entire grammar (i.e., all necessary ranking information) can and should be given by the right set of ERCs. </p>
+<p>An ERC is a single row in a comparative tableau. In logical terms, an ERC is a proposition that must be true in the final grammar for the given analysis. The grammar can the be expressed as an <strong>ERC set</strong>, where there are no contradictions between any two ERCs. Recall that a CT shows information about whether a particular constraint prefers the winning candidate or some losing candidate. Therefore, for the intended output to be the winner, a ranking must have every winner-preferring constraint dominate all loser-preferring constraint. Observe the following dummy CT:</p>
+<div class="ottab ct" title="Example ERC set">
+<table><thead><tr><th>/input/</th><th>C1</th><th>C2</th><th>C3</th></tr></thead><tbody>
+<tr><td>cand1</td><td>W</td><td>L</td><td>L</td></tr>
+<tr><td>cand2</td><td>W</td><td>W</td><td>L</td></tr>
+<tr><td>cand3</td><td></td><td>L</td><td>W</td></tr>
+</tbody></table>
+</div>
+<p>Each row in this CT is a valid ERC and can thus be &quot;translated&quot; into an English sentence:</p>
+<ol>
+<li>row a: C1 must dominate C2 <strong>and</strong> C1 must dominate C3</li>
+<li>row b: C1 must dominate C3 <strong>or</strong> C2 must dominate C3.</li>
+<li>row c: C3 must dominate C2. </li>
+</ol>
+<p>The question that remains is: what is the set of constraint orders (or rankings) that satisfies <strong>all</strong> of these propositions? Note that some are compound propositions, joined with <em>and</em> or <em>or</em>. </p>
+<p>There is in fact one total order that satisfies the ERC set in <lref>: C1 ≫ C3 ≫ C2. The ERC in row a is satisfied because C1 dominates all other constraints. The ERC in row c is satisfied because C3 dominates C2. And crucially, the ERC in row b is satisfied because C1 dominates C3. The sub-proposition &quot;C2 must dominate C3&quot; is not satisfied, but this is acceptable because it is part of a disjunction. The statement as a whole is still true because the left side of the disjunction <em>is</em> satisfied. (And for reference, <em>or</em> in ERC logic is inclusive.)</p>
+<blockquote>
+<p>Consider the other possible total orders for this set of three constraints. Can you find for each one how the ERC set is not satisfied?</p>
+</blockquote>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="rankings.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="correspondence.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
@@ -163,7 +182,7 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="rankings.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="correspondence.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
