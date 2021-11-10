@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="front-matter.html">Front matter</a></li><li class="chapter-item expanded affix "><li class="part-title">Basic concepts</li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html"><strong aria-hidden="true">3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html"><strong aria-hidden="true">4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">5.</strong> Rankings</a></li><li class="chapter-item expanded affix "><li class="part-title">Core theory</li><li class="chapter-item expanded "><a href="correspondence.html"><strong aria-hidden="true">6.</strong> Correspondence</a></li><li class="chapter-item expanded "><a href="erc.html"><strong aria-hidden="true">7.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html" class="active"><strong aria-hidden="true">8.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">9.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="rcd.html"><strong aria-hidden="true">10.</strong> Recursive Constraint Demotion</a></li><li class="chapter-item expanded affix "><li class="part-title">Domains</li><li class="chapter-item expanded "><a href="syllibification.html"><strong aria-hidden="true">11.</strong> Syllabification</a></li><li class="chapter-item expanded "><a href="segments.html"><strong aria-hidden="true">12.</strong> Segmental processes</a></li><li class="chapter-item expanded "><a href="stress.html"><strong aria-hidden="true">13.</strong> Stress</a></li><li class="chapter-item expanded affix "><li class="part-title">Advanced theory</li><li class="chapter-item expanded "><a href="bcd.html"><strong aria-hidden="true">14.</strong> Biased Constraint Demotion</a></li><li class="chapter-item expanded "><a href="ot-variants.html"><strong aria-hidden="true">15.</strong> Variants of OT</a></li><li class="chapter-item expanded affix "><a href="appendix.html">Appendix</a></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="front-matter.html">Front matter</a></li><li class="chapter-item expanded affix "><li class="part-title">Basic concepts</li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="gen.html"><strong aria-hidden="true">1.1.</strong> GEN</a></li><li class="chapter-item expanded "><a href="khan.html"><strong aria-hidden="true">1.2.</strong> CON</a></li><li class="chapter-item expanded "><a href="eval.html"><strong aria-hidden="true">1.3.</strong> EVAL</a></li><li class="chapter-item expanded "><a href="walkthrough.html"><strong aria-hidden="true">1.4.</strong> Walkthrough</a></li></ol></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html"><strong aria-hidden="true">3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html"><strong aria-hidden="true">4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">5.</strong> Rankings</a></li><li class="chapter-item expanded affix "><li class="part-title">Core theory</li><li class="chapter-item expanded "><a href="correspondence.html"><strong aria-hidden="true">6.</strong> Correspondence</a></li><li class="chapter-item expanded "><a href="erc.html"><strong aria-hidden="true">7.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html" class="active"><strong aria-hidden="true">8.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">9.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="rcd.html"><strong aria-hidden="true">10.</strong> Recursive Constraint Demotion</a></li><li class="chapter-item expanded affix "><li class="part-title">Domains</li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Syllabification</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.</strong> Segmental processes</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Stress</div></li><li class="chapter-item expanded affix "><li class="part-title">Advanced theory</li><li class="chapter-item expanded "><div><strong aria-hidden="true">14.</strong> Biased Constraint Demotion</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">15.</strong> Variants of OT</div></li><li class="chapter-item expanded affix "><a href="appendix.html">Appendix</a></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -143,7 +143,71 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="harmonic-bounding"><a class="header" href="#harmonic-bounding">Harmonic bounding</a></h1>
-<p>TK</p>
+<p>A candidate is <strong>harmonically bounded</strong> if it can never be a winner under any constraint ranking. This means it is always worse than some other candidate (or candidates). In terms of violations, it's violation profile is a <strong>superset</strong> of some other candidate's (or candidates'). There are two types of harmonic bounding: simple and collective.</p>
+<h2 id="simple-harmonic-bounding"><a class="header" href="#simple-harmonic-bounding">Simple harmonic bounding</a></h2>
+<p>Observe the following example VT:</p>
+<div class="ottab vt" title="Harmonic bounding">
+<table><thead><tr><th></th><th>/panpa/</th><th>Max</th><th>Dep</th><th>Agree</th><th>Ident</th></tr></thead><tbody>
+<tr><td></td><td>panpa</td><td></td><td></td><td>*</td><td></td></tr>
+<tr><td>→</td><td>pampa</td><td></td><td></td><td></td><td>*</td></tr>
+<tr><td></td><td>papa</td><td>*</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>panapa</td><td></td><td>*</td><td></td><td></td></tr>
+<tr><td></td><td>panaapa</td><td></td><td>**</td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<p>The first four candidates each contain a single constraint violation. Candidate d contains a single violation of Dep as it contains an epenthesized vowel. Candidate e contains two epenthesized vowels, and thus two violations of Dep. However, adding this second epenthesized vowel does not benefit the candidate in any additional way beyond a single epenthesized vowel. For every constraint, candidate does <strong>the same or worse</strong> than candidate e, and thus <strong>candidate e is harmonically bounded by candidate d</strong>. </p>
+<p>Note that claims about harmonic bounding can only be made once CON is defined. If a constraint is later introduced that says something like HaveFourVowels, then candidate e is now better than candidate d with respect to this constraint, and is no longer bounded. However, this is the danger in &quot;introducing&quot; constraints later in your analysis; previous claims about ranking might no longer be valid. In giving an analysis, it is best to define CON at the start.</p>
+<p>What happens in a comparative tableau when the simply bounded candidate is assumed to be the winner?</p>
+<div class="ottab hy" title="CT with bounded as winner">
+<table><thead><tr><th>/panpa/</th><th>Max</th><th>Dep</th><th>Agree</th><th>Ident</th></tr></thead><tbody>
+<tr><td>panaapa</td><td></td><td>**</td><td></td><td></td></tr>
+<tr><td>panpa</td><td></td><td>L</td><td>W *</td><td></td></tr>
+<tr><td>pampa</td><td></td><td>L</td><td></td><td>W *</td></tr>
+<tr><td>papa</td><td>W *</td><td>L</td><td></td><td></td></tr>
+<tr><td>panapa</td><td></td><td>L *</td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<p>Recall that for an <a href="erc.html">ERC</a> to be satisfied, <em>every L must be dominated by some W</em>. The ERC in row d contains no Ws, and thus it can never be satisfied, and therefore [panaapa] can never be the winner. </p>
+<p>If we swap roles, and assume that the <em>bounder</em>, and not the bounded, is the winner, the bounded candidate also makes itself known:</p>
+<div class="ottab hy" title="CT with bounder as winner">
+<table><thead><tr><th>/panpa/</th><th>Max</th><th>Dep</th><th>Agree</th><th>Ident</th></tr></thead><tbody>
+<tr><td>panapa</td><td></td><td>*</td><td></td><td></td></tr>
+<tr><td>panpa</td><td></td><td>L</td><td>W *</td><td></td></tr>
+<tr><td>pampa</td><td></td><td>L</td><td></td><td>W *</td></tr>
+<tr><td>papa</td><td>W *</td><td>L</td><td></td><td></td></tr>
+<tr><td>panaapa</td><td></td><td>W **</td><td></td><td></td></tr>
+</tbody></table>
+</div>
+<p>In <lref>, the ERC in row d now contains a W, but no Ls. Thus, it <em>is</em> trivially satisfied, but it is not informative; there is no ranking information. This makes sense, as it <em>is</em> possible for [panapa] to be a winner (as the above is a consistent ERC set), but we can easily spot that the inclusion of [panaapa] as a candidate, under this definition of CON, isn't adding anything to the analysis. </p>
+<p>A simply-bounded candidate as the winner in a CT will reveal its bounder as the candidate with the ERC containing Ls but no Ws, and the bounder as the winner will reveal the simply bounded candidate as the comparison containing Ws but no Ls. </p>
+<h2 id="collective-harmonic-bounding"><a class="header" href="#collective-harmonic-bounding">Collective harmonic bounding</a></h2>
+<p>A single candidate can also be bounded by multiple other candidates. This is known as <strong>collective harmonic bounding</strong>. Observe the VT below. Let's assume that GEN only generates candidates of well-formed CV syllables, and CON is as shown.</p>
+<div class="ottab vt" title="Collective harmonic bounding">
+<table><thead><tr><th></th><th>/at/</th><th>Max</th><th>Dep</th></tr></thead><tbody>
+<tr><td></td><td>∅</td><td>**</td><td></td></tr>
+<tr><td></td><td>tata</td><td></td><td>**</td></tr>
+<tr><td></td><td>ta</td><td>*</td><td>*</td></tr>
+</tbody></table>
+</div>
+<p>Candidate a is a well-formed syllable in a trivial sense in that it contains no structure at all; this results in two violations of Max as two segments wer deleted. This is the null parse candidate. Candidate b contains two well-formed syllables, at the cost of inserting both a consonant and a vowel for 2 Dep violations. Candidate c might seem like a reasonable alternative, as it contains a single well-formed syllable, with 1 deletion (input segment /t/) and one insertion (output segment [t]). Additionally, [ta] does better than [tata] on Dep, and does better than the null parse on Max. The violation profile for [ta] is not a superset of any other individual candidate alone, and thus is not simply bounded. However, its fate is sealed in other ways. </p>
+<blockquote>
+<p>What does the correspondence diagram for /at/→[ta] look like based on the above description?</p>
+</blockquote>
+<p>In this toy system, there are only two possible linear rankings, and therefore only two possible grammars:</p>
+<ol>
+<li>Max ≫ Dep</li>
+<li>Dep ≫ Max</li>
+</ol>
+<p>In the first ranking, [tata] is the clear winner as it incurs 0 violations of the first constraint, while [ta] contains 1 and the null parse contains 2. In the opposite ranking, the null parse ∅ is the clear winner as it incurs 0 violations of Dep, while the other candidates have again non-zero violations. Intuitively, the Goldilox nature of [ta] might make it seem worthwhile, but because OT is strict domination, only the best candidates for a given constraint are considered. For each constraint, there is always a better candidate than [ta], even if this chosen constraint is worse on a constraint lower in the hierarchy. </p>
+<p>This is clear to see if we convert the above VT to a comparative tableau, and assume that our ill-fated friend [ta] is the presumed winner.</p>
+<div class="ottab ct" title="Collective harmonic bounding">
+<table><thead><tr><th>/at/</th><th>Max</th><th>Dep</th></tr></thead><tbody>
+<tr><td>ta~∅</td><td>W</td><td>L</td></tr>
+<tr><td>ta~tata</td><td>L</td><td>W</td></tr>
+</tbody></table>
+</div>
+<p>If [ta] is the assumed winner, then the <a href="erc.html">ERC</a> in the first row says that Max must dominate Dep. However, the ERC in the second row states that Dep must dominate Max. This is a direct contradiction. Because a grammar is an ERC set where every ERC is satisfied (made true by the ranking), it is impossible for [ta] to ever be the winner. Even though its individual violation marks don't make this obvious, its comparisons with other candidates show its status as a perpetual loser. </p>
+<p>For more details, see [<a href="bibliography.html#Prince2002">Prince2002</a>].</p>
 
                     </main>
 
@@ -204,4 +268,6 @@
         
         
     </body>
+
+
 </html>

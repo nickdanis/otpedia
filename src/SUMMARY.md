@@ -6,6 +6,10 @@
 # Basic concepts
 
 - [Overview](overview.md)
+  - [GEN](gen.md)
+  - [CON](khan.md)
+  - [EVAL](eval.md)
+  - [Walkthrough](walkthrough.md)
 - [Candidates](candidates.md)
 - [Constraints](constraints.md)
 - [Tableaux](tableaux.md)
@@ -21,13 +25,13 @@
 
 # Domains
 
-- [Syllabification](syllibification.md)
-- [Segmental processes](segments.md)
-- [Stress](stress.md)
+- [Syllabification]()
+- [Segmental processes]()
+- [Stress]()
 
 # Advanced theory
 
-- [Biased Constraint Demotion](bcd.md)
-- [Variants of OT](ot-variants.md)
+- [Biased Constraint Demotion]()
+- [Variants of OT]()
 
 [Appendix](appendix.md)

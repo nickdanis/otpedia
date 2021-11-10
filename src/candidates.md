@@ -1,8 +1,10 @@
 # Candidates
 
+A candidate in OT is linguistic structure under competition. Specifically, a candidate contains the underlying representation (input) and a potential surface form (output), in a relationship to each other (correspondence). 
+
 ## Input
 
-The input in OT consists of a sequence of segments. The segments could be feature matrices or more articulated autosegmental representations. However, the input is *not* restricted to phonemes, or the contrastive sounds of the language. In OT, **there are no language-specific restrictions on the input**. This principle is known as **Richness of the Base**. 
+The input is the underlying, or lexical, form of some linguistic form. For segmental phonology, the input in OT consists of a sequence (string) of segments. The segments could be feature matrices or more articulated autosegmental representations. However, the input is *not* restricted to just phonemes, or the contrastive sounds of the language. In OT, **there are no language-specific restrictions on the input**. This principle is known as **Richness of the Base**. Thus, segments otherwise considered allophones *can* appear in the input in OT. 
 
 > Richness of the Base is sometimes incorrectly summarized as "anything can be an input", but this is not quite right: the range of possible inputs must still be explicitly defined and restricted, yet these restrictions hold across *all* languages.
 

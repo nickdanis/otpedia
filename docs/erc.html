@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="front-matter.html">Front matter</a></li><li class="chapter-item expanded affix "><li class="part-title">Basic concepts</li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html"><strong aria-hidden="true">3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html"><strong aria-hidden="true">4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">5.</strong> Rankings</a></li><li class="chapter-item expanded affix "><li class="part-title">Core theory</li><li class="chapter-item expanded "><a href="correspondence.html"><strong aria-hidden="true">6.</strong> Correspondence</a></li><li class="chapter-item expanded "><a href="erc.html" class="active"><strong aria-hidden="true">7.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html"><strong aria-hidden="true">8.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">9.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="rcd.html"><strong aria-hidden="true">10.</strong> Recursive Constraint Demotion</a></li><li class="chapter-item expanded affix "><li class="part-title">Domains</li><li class="chapter-item expanded "><a href="syllibification.html"><strong aria-hidden="true">11.</strong> Syllabification</a></li><li class="chapter-item expanded "><a href="segments.html"><strong aria-hidden="true">12.</strong> Segmental processes</a></li><li class="chapter-item expanded "><a href="stress.html"><strong aria-hidden="true">13.</strong> Stress</a></li><li class="chapter-item expanded affix "><li class="part-title">Advanced theory</li><li class="chapter-item expanded "><a href="bcd.html"><strong aria-hidden="true">14.</strong> Biased Constraint Demotion</a></li><li class="chapter-item expanded "><a href="ot-variants.html"><strong aria-hidden="true">15.</strong> Variants of OT</a></li><li class="chapter-item expanded affix "><a href="appendix.html">Appendix</a></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><a href="front-matter.html">Front matter</a></li><li class="chapter-item expanded affix "><li class="part-title">Basic concepts</li><li class="chapter-item expanded "><a href="overview.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="gen.html"><strong aria-hidden="true">1.1.</strong> GEN</a></li><li class="chapter-item expanded "><a href="khan.html"><strong aria-hidden="true">1.2.</strong> CON</a></li><li class="chapter-item expanded "><a href="eval.html"><strong aria-hidden="true">1.3.</strong> EVAL</a></li><li class="chapter-item expanded "><a href="walkthrough.html"><strong aria-hidden="true">1.4.</strong> Walkthrough</a></li></ol></li><li class="chapter-item expanded "><a href="candidates.html"><strong aria-hidden="true">2.</strong> Candidates</a></li><li class="chapter-item expanded "><a href="constraints.html"><strong aria-hidden="true">3.</strong> Constraints</a></li><li class="chapter-item expanded "><a href="tableaux.html"><strong aria-hidden="true">4.</strong> Tableaux</a></li><li class="chapter-item expanded "><a href="rankings.html"><strong aria-hidden="true">5.</strong> Rankings</a></li><li class="chapter-item expanded affix "><li class="part-title">Core theory</li><li class="chapter-item expanded "><a href="correspondence.html"><strong aria-hidden="true">6.</strong> Correspondence</a></li><li class="chapter-item expanded "><a href="erc.html" class="active"><strong aria-hidden="true">7.</strong> Elementary Ranking Conditions</a></li><li class="chapter-item expanded "><a href="harmonic-bounding.html"><strong aria-hidden="true">8.</strong> Harmonic Bounding</a></li><li class="chapter-item expanded "><a href="factorial-typologies.html"><strong aria-hidden="true">9.</strong> Factorial Typologies</a></li><li class="chapter-item expanded "><a href="rcd.html"><strong aria-hidden="true">10.</strong> Recursive Constraint Demotion</a></li><li class="chapter-item expanded affix "><li class="part-title">Domains</li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Syllabification</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">12.</strong> Segmental processes</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Stress</div></li><li class="chapter-item expanded affix "><li class="part-title">Advanced theory</li><li class="chapter-item expanded "><div><strong aria-hidden="true">14.</strong> Biased Constraint Demotion</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">15.</strong> Variants of OT</div></li><li class="chapter-item expanded affix "><a href="appendix.html">Appendix</a></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -147,22 +147,93 @@
 <p>An ERC is a single row in a comparative tableau. In logical terms, an ERC is a proposition that must be true in the final grammar for the given analysis. The grammar can the be expressed as an <strong>ERC set</strong>, where there are no contradictions between any two ERCs. Recall that a CT shows information about whether a particular constraint prefers the winning candidate or some losing candidate. Therefore, for the intended output to be the winner, a ranking must have every winner-preferring constraint dominate all loser-preferring constraint. Observe the following dummy CT:</p>
 <div class="ottab ct" title="Example ERC set">
 <table><thead><tr><th>/input/</th><th>C1</th><th>C2</th><th>C3</th></tr></thead><tbody>
-<tr><td>cand1</td><td>W</td><td>L</td><td>L</td></tr>
-<tr><td>cand2</td><td>W</td><td>W</td><td>L</td></tr>
-<tr><td>cand3</td><td></td><td>L</td><td>W</td></tr>
+<tr><td>winner~cand1</td><td>W</td><td>L</td><td>L</td></tr>
+<tr><td>winner~cand2</td><td>W</td><td>W</td><td>L</td></tr>
+<tr><td>winner~cand3</td><td>e</td><td>L</td><td>W</td></tr>
 </tbody></table>
 </div>
+<p>Notice that in row d, C1 assigns 'e'. This means that it makes no distiinction between the winner and cand3; the violations it assigns to both are equal. This is usually indicated by a blank sell (to avoid clutter), but when discussing the finer points of ERC logic it is better to show this e explicitly.</p>
 <p>Each row in this CT is a valid ERC and can thus be &quot;translated&quot; into an English sentence:</p>
-<ol>
-<li>row a: C1 must dominate C2 <strong>and</strong> C1 must dominate C3</li>
-<li>row b: C1 must dominate C3 <strong>or</strong> C2 must dominate C3.</li>
-<li>row c: C3 must dominate C2. </li>
-</ol>
+<div class="ottab ct" title="Example ERC set">
+<table><thead><tr><th>/input/</th><th>C1</th><th>C2</th><th>C3</th><th>ERC translation</th></tr></thead><tbody>
+<tr><td>winner~cand1</td><td>W</td><td>L</td><td>L</td><td>&quot;C1 must dominate C2 <strong>and</strong> C1 must dominate C3&quot;</td></tr>
+<tr><td>winner~cand2</td><td>W</td><td>W</td><td>L</td><td>&quot;C1 must dominate C3 <strong>or</strong> C2 must dominate C3.&quot;</td></tr>
+<tr><td>winner~cand3</td><td>e</td><td>L</td><td>W</td><td>&quot;C3 must dominate C2.&quot;</td></tr>
+</tbody></table>
+</div>
 <p>The question that remains is: what is the set of constraint orders (or rankings) that satisfies <strong>all</strong> of these propositions? Note that some are compound propositions, joined with <em>and</em> or <em>or</em>. </p>
 <p>There is in fact one total order that satisfies the ERC set in <lref>: C1 ≫ C3 ≫ C2. The ERC in row a is satisfied because C1 dominates all other constraints. The ERC in row c is satisfied because C3 dominates C2. And crucially, the ERC in row b is satisfied because C1 dominates C3. The sub-proposition &quot;C2 must dominate C3&quot; is not satisfied, but this is acceptable because it is part of a disjunction. The statement as a whole is still true because the left side of the disjunction <em>is</em> satisfied. (And for reference, <em>or</em> in ERC logic is inclusive.)</p>
 <blockquote>
 <p>Consider the other possible total orders for this set of three constraints. Can you find for each one how the ERC set is not satisfied?</p>
 </blockquote>
+<h2 id="operations-over-erc-values"><a class="header" href="#operations-over-erc-values">Operations over ERC values</a></h2>
+<p>Because ERCs can be translated into propositions over <em>and</em> and <em>or</em>, logical properties of these operators can be straightfowardly applied to individual ERCs as well. Since ERCs are logical propositions, the following operations help find logical entailments between ERCs. </p>
+<h3 id="l-retraction"><a class="header" href="#l-retraction">L-retraction</a></h3>
+<p>Given an ERC E, replacing any L in this ERC with E results in a new ERC F such that E entails F. What this means in practice is as follows. </p>
+<div class="ottab ct" title="Example ERC set">
+<table><thead><tr><th>/input/</th><th>C1</th><th>C2</th><th>C3</th><th>ERC translation</th></tr></thead><tbody>
+<tr><td>winner~cand1</td><td>W</td><td>L</td><td>L</td><td>&quot;C1 must dominate C2 <strong>and</strong> C1 must dominate C3&quot;</td></tr>
+</tbody></table>
+</div>
+<p>In <lref>, the ERC WLL is shown, along with its translation. If, for instance, the second L in WLL is replaced with e, the resulting ERC is WLe, which is translated as follows:</p>
+<ul>
+<li>C1 must dominate C2. </li>
+</ul>
+<p>From here, the logic is simple:</p>
+<ol>
+<li>Assume P = &quot;C1 must dominate C2&quot;</li>
+<li>Assume Q = &quot;C1 must dominate C3&quot;</li>
+<li>WLL = P &amp; Q (def. ERC)</li>
+<li>WLe = P (def. ERC)</li>
+<li>If P &amp; Q, then P (def. '&amp;')</li>
+<li>Therefore, if WLL, then WLe (substutition)</li>
+</ol>
+<h3 id="w-extension"><a class="header" href="#w-extension">W-extension</a></h3>
+<p>On the disjunctive side, a similar argument can be made: given an ERC E, replacing any e with W will result in an ERC F such that E entails F. Below is the third ERC from the original example CT from this section.</p>
+<div class="ottab ct" title="Example ERC set">
+<table><thead><tr><th>/input/</th><th>C1</th><th>C2</th><th>C3</th><th>ERC translation</th></tr></thead><tbody>
+<tr><td>winner~cand3</td><td>e</td><td>L</td><td>W</td><td>&quot;C3 must dominate C2.&quot;</td></tr>
+</tbody></table>
+</div>
+<p>In the ERC eLW, if e is replaced with W, the resulting ERC is WLW, which has the following translation:</p>
+<ul>
+<li>C1 must dominate C2 or C3 must dominate C2.</li>
+</ul>
+<p>Again, to show that eLW entails WLW is straightforward:</p>
+<ol>
+<li>Assume P = &quot;C1 must dominate C2&quot;</li>
+<li>Assume Q = &quot;C3 must dominate C2&quot;</li>
+<li>eLW = Q (def. ERC)</li>
+<li>WLW = P or Q (def. ERC)</li>
+<li>If Q, then P or Q (def. 'or')</li>
+<li>Therefore, if eLW, then WLW (substitution)</li>
+</ol>
+<p>The pragmatics of 5 are a little more obscure (&quot;if you are a cat, then you are a cat or you are a dog&quot; is logically true), but the logic is sound. </p>
+<p>To see if one individual ERC A entails another individual ERC B, look for a chain of L-retractions and W-extensions to get from one to the other. If such a path exists, ERC A entails ERC B. </p>
+<h3 id="fusion"><a class="header" href="#fusion">Fusion</a></h3>
+<p>Fusion is an operation over W, L, and e that determins what information is entailed by a <em>set</em> of ERCs. If A and B are ERCs, then the fusion is A◦B. To calculate the fusion of an ERC set, apply the following position-by-position (constraint by constraint) to the ERC set:</p>
+<div class="fig" title="Def. Fusion, where X = W, L, or e:"> 
+<table><thead><tr><th>Operation</th><th>Comment</th></tr></thead><tbody>
+<tr><td>X◦X = X</td><td>X fused with itself is X</td></tr>
+<tr><td>X◦L = L◦X = L</td><td>X fused with L is L</td></tr>
+<tr><td>X◦e = e◦X = X</td><td>X fused with e is X</td></tr>
+</tbody></table>
+</div>
+<p>To repeat the example from [<a href="bibliography.html#Prince2002">Prince2002</a>]:9, two ERCs are shown along with their fusion in the CT below.</p>
+<div class="ottab ct" title="ERC Fusion">
+<table><thead><tr><th></th><th>C1</th><th>C2</th><th>C3</th></tr></thead><tbody>
+<tr><td>A</td><td>W</td><td>L</td><td>e</td></tr>
+<tr><td>B</td><td>e</td><td>W</td><td>L</td></tr>
+<tr><td>A◦B</td><td>W</td><td>L</td><td>L</td></tr>
+</tbody></table>
+</div>
+<p>The fusion operations are applied individually per each column, so taking the definition above, each of the following apply (essentially the above tableau, transposed):</p>
+<ol>
+<li>C1: W◦e = W</li>
+<li>C2: L◦W = L</li>
+<li>C3: e◦L = L</li>
+</ol>
+<p>The resulting ERC is WLL, meaning that in an ERC set where both ERCs A and B are true, then it must also be the case that the resulting ERC A◦B is also true. Indivudally, neither A or B says anything jointly about C1 and C3. If we visualize the Hasse diagram for A and B, it's clear to see why A◦B hold, knowing that the domination relation is transitive, but we can also prove this via fusion without leaving our ERCs. Also beware that A◦B is <strong>less informative</strong> than A and B together; the fustion does not tell us anything about how C2 and C3 relate to each other, which B tells us exactly this. Thus, the fustion of two ERCs A and B is not <strong>everything</strong> that is entailed by A and B, but the results of fusion will be <strong>something</strong> entailed by A and B. </p>
 
                     </main>
 
@@ -223,4 +294,6 @@
         
         
     </body>
+
+
 </html>

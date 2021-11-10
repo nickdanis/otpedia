@@ -27,6 +27,7 @@ enable = false
 
 [preprocessor.bib]
 bibliography = "library.bib"
+title = "References"
 
 [preprocessor.toc]
 command = "mdbook-toc"

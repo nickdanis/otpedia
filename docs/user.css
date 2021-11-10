@@ -147,6 +147,14 @@ lref::before {
     --bsep: 3px;
 }
 
+table {
+    margin-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: auto;
+    background-color: var(--bg);
+}
+
 div.ottab {
     margin-block-start: 1.6rem;
     margin-block-end: 1.6rem;
