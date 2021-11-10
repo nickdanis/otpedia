@@ -6,7 +6,7 @@ INCOMPLETE WORKING DRAFT!!
 
 This resource is written in [mdbook](https://rust-lang.github.io/mdBook/), making extensive use of [mdbook-graphviz](https://github.com/dylanowen/mdbook-graphviz), [mdbook-bib](https://github.com/francisco-perez-sorrosal/mdbook-bib), and others. 
 
-I must also acknowledge all those linguists who taught me OT or learned OT beside me, including but not limited to: Alan Prince, Bruce Tesar, Paula Houghton, Hope McManus, Natalie DelBusso, Paul de Lacy, among many others. 
+I must also acknowledge all those linguists who taught me OT or learned OT beside me, including but not limited to: Alan Prince, Bruce Tesar, Jane Grimshaw, Paula Houghton, Hope McManus, Natalie DelBusso, Nazarré Merchant, Paul de Lacy, among many others. 
 
 This resource is dedicated to, and in memory of, Natalie DelBusso. 
 
